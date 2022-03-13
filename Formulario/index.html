@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="StyleSheet" href="css/estilos.css">
+    <script src="js/validador.js"></script>
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js " > </script> 
+    
+</head>
+<body>
+    
+    <main>
+        <form>
+            <h1>Formulario de Registro</h1>
+            <label for="nombre">INGRESA EL NOMBRE</label>
+            <input id="nombre" type="text" placeholder="Ingresa el nombre" value="">
+            <br>
+            <br>
+            <label for="correo">INGRESA EL CORREO</label>
+            <input id="correo" type="email" placeholder="Ingresa el correo" value="">
+            <br>
+            <br>
+            <label for="asunto">INGRESA EL ASUNTO</label>
+            <input id="asunto" type="text" placeholder="Ingresa el asunto" value="">
+            <br>
+            <br>
+            <label for="contenido">INGRESA EL CONTENIDO</label>
+            <textarea name="" id="contenido" cols="30" rows="10" value=""></textarea>
+            
+            <br>
+            <br>
+            <div>
+            <a onclick="enviar()">Enviar Informacion</a>
+            <a onclick="limpiar()">Vaciar Campos</a>
+            </div>
+            <br> 
+        </form>
+
+
+    </main>
+</body>
+</html>

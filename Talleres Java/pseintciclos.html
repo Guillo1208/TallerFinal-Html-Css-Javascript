@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>pseint-ciclos</title>
+</head>
+<body>
+    <header>
+        <H1>TALLERES CANTERA UNO - PSEINT</H1>
+    </header>
+    <nav>
+        <a id="navegacion" href="index.html">INICIO</a>
+        <a id="navegacion" href="pseint.html">TALLER VARIABLE E IMPRESION</a>
+        <a id="navegacion" href="pseincondiconales.html">TALLER CONDICIONALES</a>
+        <a id="navegacion" href="pseintarreglo.html">TALLER AREGLOS</a>
+        <a id="navegacion" href="pseinfunciones.html">TALLER FUNCIONES</a>
+    </nav>
+
+    <main id="main-nuevo">
+        <section>
+            <article id="art-navega">
+                <P>1. Realizar la siguiente figura por medio del ciclo Para</P>
+                <img src="img/uno.PNG">
+                <pre>
+                    Proceso Punto_Uno
+                    Definir control Como entero;
+                    Definir asterisco Como Caracter;
+                    
+                    asterisco<-"*";
+                    
+                    Para control<-1 Hasta 10 Con Paso 1 Hacer
+                        
+                        escribir asterisco;
+                        asterisco<-Concatenar(asterisco,"*");
+                        
+                    FinPara
+                FinProceso
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>2. Realizar la siguiente figura por medio del ciclo Mientras - Hacer</P>
+                <img src="img/dos.PNG">
+                <pre>
+                    Proceso Punto_Dos
+                    Definir n,i,j,l Como entero;
+                    definir c como caracter;
+                    
+                    n<-10;
+                    c<-" * ";
+                    l<-1;
+                    
+                    mientras l<=n Hacer
+                        i<-1;
+                        j<-1;
+                        Mientras i<=(n-l) Hacer
+                            Escribir Sin Saltar "   ";
+                            i<-i+1;
+                        FinMientras
+                    
+                    
+                        mientras j<=l Hacer
+                        Escribir Sin Saltar c;
+                        j<-j+1;
+                        FinMientras
+                        
+                        l<-l+1;
+                        Escribir "";
+                    FinMientras
+                
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>3.Realizar la siguiente figura por medio del ciclo Repetir - Hasta Que</P>
+                <img src="img/tres.PNG">
+                <pre>
+                    Proceso Punto_tres
+                    Definir n,i,j,l,ancho,espacio,ancho_b,i_b Como entero;
+                    definir c como caracter;
+                    n<-1;
+                    c<-" * ";
+                    ancho<-1;
+                    
+                    Repetir
+                        espacio<-11;
+                        i<-0;
+                        Repetir
+                            Escribir " " Sin Saltar;
+                            espacio<-espacio-1;
+                        Hasta Que espacio<n
+                        
+                        Repetir
+                            Escribir "*" Sin Saltar;
+                            i<-i+1;
+                        Hasta Que i>=(ancho)
+                        
+                        Escribir "";
+                        ancho<-ancho+2;
+                        n<-n+1;
+                        
+                    Hasta Que n>11
+                    
+                    j<-0;
+                    ancho_b<-3;
+                    i_b<-0;
+                    
+                    Repetir
+                        l<-10;
+                        
+                        Repetir
+                            escribir " " Sin Saltar;
+                            l<-l-1;
+                        Hasta Que l <= j
+                        
+                        Repetir
+                            Escribir "*" Sin Saltar;
+                            i_b<-i_b+1;
+                        Hasta Que i_b >= ancho_b
+                        
+                        ancho_b<-ancho_b+1;
+                        j<-j+1;
+                        Escribir "";
+                    Hasta Que j>0 
+                    
+                    Definir j_c,ancho_c,i_c,l_c,ancho_e,cont como entero;
+                    
+                    j_c<-0;
+                    ancho_c<-3;
+                    ancho_e<-3;
+                    i_c<-0;
+                    cont<-3;
+                    
+                    Repetir
+                        l_C<-13;
+                        
+                        Repetir
+                            escribir " " Sin Saltar;
+                            l_c<-l_c-1;
+                        Hasta Que l_c <= ancho_e
+                        
+                        Repetir
+                            Escribir "*" Sin Saltar;
+                            i_c<-i_c+1;
+                        Hasta Que i_c >= ancho_c
+                        cont<-cont+2;
+                        ancho_c<-ancho_c+cont;
+                        ancho_e<-ancho_e+1;
+                        j_c<-j_c+1;
+                        Escribir "";
+                    Hasta Que j_c>2 
+                FinProceso
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>4. Se requiere un programa que pueda crear la tabla de multiplicar del número que el usuario indique por medio del ciclo Para; esta debe ser impresa del 1 al 10. Ejemplo, si el usuario indica que desea crear la tabla del 5, entonces el resultado debería ser el siguiente:</P>
+                <img src="img/cuatro.PNG">
+                <pre>
+                    Proceso Punto_Cuatro
+                    Definir Num,control,multi Como Entero;
+                    
+                    escribir "ingresa el numero a multiplicar";
+                    Leer Num;
+                    Escribir "el resulatado de la tabla del ",Num, " es: ";
+                    para control<-1 Hasta 10 Hacer
+                        multi<-control*Num;
+                        Escribir control," * ",num," = ",multi;
+                    FinPara
+                FinProceso
+                
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>5. Utilizando el ciclo que usted desee, crear un menú de ejecución infinita hasta que el usuario desee terminar dicho ciclo.</P>
+                <img src="img/cinco.PNG">
+                <pre>
+                    Proceso Punto_Quinto
+                    Definir opc Como Entero;
+                    opc<-0;
+                    Mientras opc<3 Hacer
+                        escribir "menu de usuario";
+                        Escribir "1. captura el nombre";
+                        Escribir "2. saluda persona";
+                        Escribir "3 salir de sistema";
+                        Leer opc;
+                        Limpiar Pantalla;
+                    FinMientras
+                FinProceso
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>6. Se está creando una aplicación que va a estar conectada con un prototipo que permita almacenar contactos telefónicos en el dispositivo. Para ello cada contacto debe contener nombre completo, teléfono y organización. Se requiere que la aplicación permita añadir 3 contactos verificando que el número no esté almacenado, buscar contactos almacenados y eliminar contactos si el usuario lo requiere. Recuerde que el sistema debe terminar cuando el usuario así lo indique.</P>
+                <pre>
+                    Proceso Punto_Sexto
+                    Definir Nombre,organizacion,telefono,busc Como Caracter;
+                    Definir Nombredos,organizaciondos,telefonodos Como Caracter;
+                    Definir Nombretres,organizaciontres,telefonotres Como Caracter;
+                    Definir cont,opc Como Entero;
+                    opc<-0;
+                    cont<-1;
+                    mientras opc < 4 Hacer
+                        escribir "Agenda de contactos";
+                        Escribir "1. Añadir contacto";
+                        Escribir "2. Buscar contacto";
+                        Escribir "3 eliminar contacto";
+                        Escribir "4 salir";
+                        Leer opc;
+                        Limpiar Pantalla;
+                        mientras opc==1 Hacer
+                            si cont<=3 Entonces
+                                si cont=1 entonces
+                                    Escribir "contacto numero ", cont;
+                                    escribir "agregar el nombre del contacto";
+                                    leer Nombre;
+                                    escribir "agrega el telefono del contacto";
+                                    leer telefono;
+                                    escribir "agrega la organizacion";
+                                    leer organizacion;
+                                FinSi
+                                si cont=2 entonces
+                                    Escribir "contacto numero ", cont;
+                                    escribir "agregar el nombre del contacto";
+                                    leer Nombredos;
+                                    escribir "agrega el telefono del contacto";
+                                    leer telefonodos;
+                                    escribir "agrega la organizacion";
+                                    leer organizaciondos;
+                                FinSi
+                                si cont=3 entonces
+                                    Escribir "contacto numero ", cont;
+                                    escribir "agregar el nombre del contacto";
+                                    leer Nombretres;
+                                    escribir "agrega el telefono del contacto";
+                                    leer telefonotres;
+                                    escribir "agrega la organizacion";
+                                    leer organizaciontres;
+                                FinSi
+                                
+                            SiNo
+                                Escribir "ya esta el maximo de contactos ingresados";
+                                Esperar tecla;
+                            FinSi
+                            
+                            cont<-cont+1;
+                            opc <- opc -1;
+                            Limpiar Pantalla;
+                        FinMientras
+                        
+                        mientras opc==2 Hacer
+                            escribir "agregar el nombre del contacto a buscar";
+                            leer busc;
+                            si busc = Nombre Entonces
+                                Escribir "el usuario fue encontrado";
+                                Escribir "Nombre : ",Nombre;
+                                Escribir "telefono: ",telefono;
+                                Escribir "organizacion : ",organizacion;				
+                                Esperar tecla;
+                            FinSi
+                            si busc = Nombredos Entonces
+                                Escribir "el usuario fue encontrado";
+                                Escribir "Nombre : ",Nombredos;
+                                Escribir "telefono: ",telefonodos;
+                                Escribir "organizacion : ",organizaciondos;				
+                                Esperar tecla;
+                            FinSi
+                            si busc = Nombretres Entonces
+                                Escribir "el usuario fue encontrado";
+                                Escribir "Nombre : ",Nombretres;
+                                Escribir "telefono: ",telefonotres;
+                                Escribir "organizacion : ",organizaciontres;				
+                                Esperar Tecla;
+                            FinSi
+                            Si busc <> nombre & busc <> Nombredos & busc<>Nombretres Entonces
+                                Escribir "el contacto no registra en la agenda";
+                                Esperar Tecla;
+                            FinSi
+                            opc <- opc - 2;
+                            Limpiar Pantalla;
+                        FinMientras
+                        
+                        Mientras opc==3 Hacer
+                            escribir "agregar el nombre del contacto a buscar y posteriormente elimnar";
+                            leer busc;
+                            si busc = Nombre Entonces
+                                Escribir "el usuario fue encontrado";
+                                Escribir "Nombre : ",Nombre;
+                                Escribir "telefono: ",telefono;
+                                Escribir "organizacion : ",organizacion;
+                                Escribir "Se procedera con la eliminacion ";
+                                nombre<-"";
+                                telefono<-"";
+                                organizacion<-"";
+                                cont<-cont-1;
+                                Esperar tecla;
+                            FinSi
+                            si busc = Nombredos Entonces
+                                Escribir "el usuario fue encontrado";
+                                Escribir "Nombre : ",Nombredos;
+                                Escribir "telefono: ",telefonodos;
+                                Escribir "organizacion : ",organizaciondos;
+                                Escribir "Se procedera con la eliminacion ";
+                                Nombredos<-"";
+                                telefonodos<-"";
+                                organizaciondos<-"";
+                                cont<-cont-1;
+                                Esperar tecla;
+                            FinSi
+                            si busc = Nombretres Entonces
+                                Escribir "el usuario fue encontrado";
+                                Escribir "Nombre : ",Nombretres;
+                                Escribir "telefono: ",telefonotres;
+                                Escribir "organizacion : ",organizaciontres;
+                                Nombretres<-"";
+                                telefonotres<-"";
+                                organizaciontres<-"";
+                                cont<-cont-1;
+                                Esperar tecla;
+                            SiNo
+                                Escribir "el contacto no registra en la agenda";
+                                Esperar Tecla;
+                            FinSi
+                            opc <- opc - 3;
+                            Limpiar Pantalla;
+                        FinMientras
+                    FinMientras
+                FinProceso
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>7. El parqueadero "El guardián" presta sus servicios de parqueadero nocturno para los usuarios del barrio y requiere una aplicación que permita registrar los vehículos que se cuidan en estas instalaciones. Se sugiere que el parqueadero tenga los atributos del vehículo como son, placa y marca, y los datos del cliente como son nombre completo y número de teléfono. Para cada vehículo se debe permitir la opción de ingresar al parqueadero, retirar del parqueadero y consultar si un vehículo se encuentra en el parqueadero. Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga en presente que el parqueadero solo puede almacenar máximo 5 vehículos.</P>
+                <pre>
+                    Proceso Punto_Septimo
+                    Definir busc Como Caracter;
+                    Definir placa_a, marca_a, nombre_a, telefono_a Como Caracter;
+                    Definir placa_b, marca_b, nombre_b, telefono_b Como Caracter;
+                    Definir placa_c, marca_c, nombre_c, telefono_c Como Caracter;
+                    Definir placa_d, marca_d, nombre_d, telefono_d Como Caracter;
+                    Definir placa_e, marca_e, nombre_e, telefono_e Como Caracter;
+                    Definir cont,opc Como Entero;
+                    opc<-0;
+                    cont<-1;
+                    placa_a<-"";
+                    marca_a<-"";
+                    nombre_a<-"";
+                    telefono_a<-"";
+                    placa_b<-"";
+                    marca_b<-"";
+                    nombre_b<-"";
+                    telefono_b<-"";
+                    placa_c<-"";
+                    marca_c<-"";
+                    nombre_c<-"";
+                    telefono_c<-"";
+                    placa_d<-"";
+                    marca_d<-"";
+                    nombre_d<-"";
+                    telefono_d<-"";
+                    placa_e<-"";
+                    marca_e<-"";
+                    nombre_e<-"";
+                    telefono_e<-"";
+                    
+                    mientras opc < 4 Hacer
+                        escribir "===== PARQUEADERO EL GUARDIAN =====";
+                        Escribir "1. Ingresar vehiculo";
+                        Escribir "2. Consultar vehiculo";
+                        Escribir "3. Retirar Vehiculo";
+                        Escribir "4. salir";
+                        Leer opc;
+                        Limpiar Pantalla;
+                        mientras opc==1 Hacer
+                            si cont<=5 Entonces
+                                si cont=1 entonces
+                                    Escribir "Vehiculo # ", cont;
+                                    escribir "Nombre del propietario";
+                                    leer nombre_a;
+                                    escribir "telefono del propietario";
+                                    leer telefono_a;
+                                    escribir "Placa del vehiculo";
+                                    leer placa_a;
+                                    escribir "Marca del vehiculo";
+                                    leer marca_a;
+                                FinSi
+                                si cont=2 entonces
+                                    Escribir "Vehiculo # ", cont;
+                                    escribir "Nombre del propietario";
+                                    leer nombre_b;
+                                    escribir "telefono del propietario";
+                                    leer telefono_b;
+                                    escribir "Placa del vehiculo";
+                                    leer placa_b;
+                                    escribir "Marca del vehiculo";
+                                    leer marca_b;
+                                FinSi
+                                si cont=3 entonces
+                                    Escribir "Vehiculo # ", cont;
+                                    escribir "Nombre del propietario";
+                                    leer nombre_c;
+                                    escribir "telefono del propietario";
+                                    leer telefono_c;
+                                    escribir "Placa del vehiculo";
+                                    leer placa_c;
+                                    escribir "Marca del vehiculo";
+                                    leer marca_c;
+                                FinSi
+                                si cont=4 entonces
+                                    Escribir "Vehiculo # ", cont;
+                                    escribir "Nombre del propietario";
+                                    leer nombre_d;
+                                    escribir "telefono del propietario";
+                                    leer telefono_d;
+                                    escribir "Placa del vehiculo";
+                                    leer placa_d;
+                                    escribir "Marca del vehiculo";
+                                    leer marca_d;
+                                FinSi
+                                si cont=5 entonces
+                                    Escribir "Vehiculo # ", cont;
+                                    escribir "Nombre del propietario";
+                                    leer nombre_e;
+                                    escribir "telefono del propietario";
+                                    leer telefono_e;
+                                    escribir "Placa del vehiculo";
+                                    leer placa_e;
+                                    escribir "Marca del vehiculo";
+                                    leer marca_e;
+                                FinSi
+                                
+                            SiNo
+                                Escribir "Parqueadero lleno";
+                                Esperar tecla;
+                            FinSi
+                            
+                            cont<-cont+1;
+                            opc <- opc - 1;
+                            Limpiar Pantalla;
+                            
+                        FinMientras
+                        
+                        mientras opc==2 Hacer
+                            escribir "Ingrese la placa del Vehiculo a consultar";
+                            leer busc;
+                            si busc = placa_a Entonces
+                                Escribir "Vehiculo encontrado";
+                                Escribir "Nombre del propietario : ",nombre_a;
+                                Escribir "Telefono del propitario: ",telefono_a;
+                                Escribir "Placa del Vehiculo :     ",placa_a;	
+                                Escribir "Marca del Vehiculo:      ",marca_a;	
+                                Esperar tecla;
+                            FinSi
+                            si busc = placa_b Entonces
+                                Escribir "Vehiculo encontrado";
+                                Escribir "Nombre del propietario : ",nombre_b;
+                                Escribir "Telefono del propitario: ",telefono_b;
+                                Escribir "Placa del Vehiculo :     ",placa_b;	
+                                Escribir "Marca del Vehiculo:      ",marca_b;	
+                                Esperar tecla;
+                            FinSi
+                            si busc = placa_c Entonces
+                                Escribir "Vehiculo encontrado";
+                                Escribir "Nombre del propietario : ",nombre_c;
+                                Escribir "Telefono del propitario: ",telefono_c;
+                                Escribir "Placa del Vehiculo :     ",placa_c;	
+                                Escribir "Marca del Vehiculo:      ",marca_c;	
+                                Esperar tecla;
+                            FinSi
+                            si busc = placa_d Entonces
+                                Escribir "Vehiculo encontrado";
+                                Escribir "Nombre del propietario : ",nombre_d;
+                                Escribir "Telefono del propitario: ",telefono_d;
+                                Escribir "Placa del Vehiculo :     ",placa_d;	
+                                Escribir "Marca del Vehiculo:      ",marca_d;	
+                                Esperar tecla;
+                            FinSi
+                            si busc = placa_e Entonces
+                                Escribir "Vehiculo encontrado";
+                                Escribir "Nombre del propietario : ",nombre_e;
+                                Escribir "Telefono del propitario: ",telefono_e;
+                                Escribir "Placa del Vehiculo :     ",placa_e;	
+                                Escribir "Marca del Vehiculo:      ",marca_e;	
+                                Esperar tecla;
+                            FinSi
+                            Esperar tecla;
+                            opc <- opc - 2;
+                            Limpiar Pantalla;
+                        FinMientras
+                        
+                        Mientras opc==3 Hacer
+                            escribir "Ingresa la placa del vehiculo a retirar";
+                            leer busc;
+                            
+                                si busc = placa_a Entonces
+                                Escribir "el vehiculo fue encontrado";
+                                Escribir "Nombre del propietario : ",nombre_a;
+                                Escribir "Telefono del propitario: ",telefono_a;
+                                Escribir "Placa del Vehiculo :     ",placa_a;	
+                                Escribir "Marca del Vehiculo:      ",marca_a;
+                                nombre_a<-"";
+                                telefono_a<-"";
+                                placa_a<-"";
+                                marca_a<-"";
+                                cont<-cont-1;
+                                Esperar tecla;
+                            FinSi
+                            si busc = placa_b Entonces
+                                Escribir "el vehiculo fue encontrado";
+                                Escribir "Nombre del propietario : ",nombre_b;
+                                Escribir "Telefono del propitario: ",telefono_b;
+                                Escribir "Placa del Vehiculo :     ",placa_b;	
+                                Escribir "Marca del Vehiculo:      ",marca_b;
+                                nombre_b<-"";
+                                telefono_b<-"";
+                                placa_b<-"";
+                                marca_b<-"";
+                                cont<-cont-1;
+                                Esperar tecla;
+                            FinSi
+                            si busc = placa_c Entonces
+                                Escribir "el vehiculo fue encontrado";
+                                Escribir "Nombre del propietario : ",nombre_c;
+                                Escribir "Telefono del propitario: ",telefono_c;
+                                Escribir "Placa del Vehiculo :     ",placa_c;	
+                                Escribir "Marca del Vehiculo:      ",marca_c;
+                                nombre_c<-"";
+                                telefono_c<-"";
+                                placa_c<-"";
+                                marca_c<-"";
+                                cont<-cont-1;
+                                Esperar tecla;
+                            FinSi
+                            si busc = placa_d Entonces
+                                Escribir "el vehiculo fue encontrado";
+                                Escribir "Nombre del propietario : ",nombre_d;
+                                Escribir "Telefono del propitario: ",telefono_d;
+                                Escribir "Placa del Vehiculo :     ",placa_d;	
+                                Escribir "Marca del Vehiculo:      ",marca_d;
+                                nombre_d<-"";
+                                telefono_d<-"";
+                                placa_d<-"";
+                                marca_d<-"";
+                                cont<-cont-1;
+                                Esperar tecla;
+                            FinSi
+                            si busc = placa_e Entonces
+                                Escribir "el vehiculo fue encontrado";
+                                Escribir "Nombre del propietario : ",nombre_e;
+                                Escribir "Telefono del propitario: ",telefono_e;
+                                Escribir "Placa del Vehiculo :     ",placa_e;	
+                                Escribir "Marca del Vehiculo:      ",marca_e;
+                                nombre_e<-"";
+                                telefono_e<-"";
+                                placa_e<-"";
+                                marca_e<-"";
+                                cont<-cont-1;
+                                Esperar tecla;
+                            FinSi
+                            Esperar Tecla;
+                            opc <- opc - 3;
+                            Limpiar Pantalla;
+                        FinMientras
+                    FinMientras
+                FinProceso
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>8.La escuela automovilística "El Maestro" requiere una aplicación que permita registrar a sus clientes en los cursos de enseñanza automovilística y establecer quienes lo han aprobado para continuar con el trámite de adquirir la licencia de conducción. Para cada usuario se debe permitir registrar su ingreso al curso, consultar usuarios que hayan presentado el curso y resultados de la prueba del curso (si fueron aprobados o no). Recuerde que el sistema debe terminar cuando el usuario así lo indique. Tenga presente que la escuela tiene capacidad máxima de gestionar 8 usuarios en su totalidad.</P>
+                <pre>
+                    Proceso Punto_octavo
+                    Definir nom_a,id_a,resultado_a, cons Como Caracter;
+                    Definir nom_b,id_b,resultado_b Como Caracter;
+                    Definir nom_c,id_c,resultado_c Como Caracter;
+                    Definir nom_d,id_d,resultado_d Como Caracter;
+                    Definir nom_e,id_e,resultado_e Como Caracter;
+                    Definir nom_f,id_f,resultado_f Como Caracter;
+                    Definir nom_g,id_g,resultado_g Como Caracter;
+                    Definir nom_h,id_h,resultado_h Como Caracter;
+                    Definir cont,opc Como Entero;
+                    cont<-1;
+                    Para opc<-1 Hasta 3 Hacer
+                        escribir "===== Escuela automovilística El MAESTRO =====";
+                        Escribir "1. Ingresar alumno";
+                        Escribir "2. Consultar alumno";
+                        Escribir "3. Resultado del curso";
+                        Escribir "4. salir";
+                        Leer opc;
+                        Limpiar Pantalla;
+                        Mientras opc==1 Hacer
+                            Si cont<=8 Entonces
+                                si cont=1 Entonces
+                                    Escribir "Ingrese la informacion del alumno #",cont;
+                                    Escribir "nombre alumno:  "Sin Saltar;
+                                    leer nom_a;
+                                    Escribir "identificacion: " Sin Saltar;
+                                    leer id_a;
+                                    Escribir "Ingresa SI, si aprobo el curso y NO si fue lo contrario"Sin Saltar;
+                                    leer resultado_a;
+                                    Limpiar Pantalla;
+                                FinSi
+                                
+                                si cont=2 Entonces
+                                    Escribir "Ingrese la informacion del alumno #",cont;
+                                    Escribir "nombre alumno:  "Sin Saltar;
+                                    leer nom_b;
+                                    Escribir "identificacion: " Sin Saltar;
+                                    leer id_b;
+                                    Escribir "Ingresa SI, si aprobo el curso y NO si fue lo contrario"Sin Saltar;
+                                    leer resultado_b;
+                                    Limpiar Pantalla;
+                                FinSi
+                                si cont=3 Entonces
+                                    Escribir "Ingrese la informacion del alumno #",cont;
+                                    Escribir "nombre alumno:  "Sin Saltar;
+                                    leer nom_c;
+                                    Escribir "identificacion: " Sin Saltar;
+                                    leer id_c;
+                                    Escribir "Ingresa SI, si aprobo el curso y NO si fue lo contrario"Sin Saltar;
+                                    leer resultado_c;
+                                    Limpiar Pantalla;
+                                FinSi
+                                si cont=4 Entonces
+                                    Escribir "Ingrese la informacion del alumno #",cont;
+                                    Escribir "nombre alumno:  "Sin Saltar;
+                                    leer nom_d;
+                                    Escribir "identificacion: " Sin Saltar;
+                                    leer id_d;
+                                    Escribir "Ingresa SI, si aprobo el curso y NO si fue lo contrario"Sin Saltar;
+                                    leer resultado_d;
+                                    Limpiar Pantalla;
+                                FinSi
+                                si cont=5 Entonces
+                                    Escribir "Ingrese la informacion del alumno #",cont;
+                                    Escribir "nombre alumno:  "Sin Saltar;
+                                    leer nom_e;
+                                    Escribir "identificacion: " Sin Saltar;
+                                    leer id_e;
+                                    Escribir "Ingresa SI, si aprobo el curso y NO si fue lo contrario"Sin Saltar;
+                                    leer resultado_e;
+                                    Limpiar Pantalla;
+                                FinSi
+                                si cont=6 Entonces
+                                    Escribir "Ingrese la informacion del alumno #",cont;
+                                    Escribir "nombre alumno:  "Sin Saltar;
+                                    leer nom_f;
+                                    Escribir "identificacion: " Sin Saltar;
+                                    leer id_f;
+                                    Escribir "Ingresa SI, si aprobo el curso y NO si fue lo contrario"Sin Saltar;
+                                    leer resultado_f;
+                                    Limpiar Pantalla;
+                                FinSi
+                                si cont=7 Entonces
+                                    Escribir "Ingrese la informacion del alumno #",cont;
+                                    Escribir "nombre alumno:  "Sin Saltar;
+                                    leer nom_g;
+                                    Escribir "identificacion: " Sin Saltar;
+                                    leer id_g;
+                                    Escribir "Ingresa SI, si aprobo el curso y NO si fue lo contrario"Sin Saltar;
+                                    leer resultado_g;
+                                    Limpiar Pantalla;
+                                FinSi
+                                si cont=8 Entonces
+                                    Escribir "Ingrese la informacion del alumno #",cont;
+                                    Escribir "nombre alumno:  "Sin Saltar;
+                                    leer nom_h;
+                                    Escribir "identificacion: " Sin Saltar;
+                                    leer id_h;
+                                    Escribir "Ingresa SI, si aprobo el curso y NO si fue lo contrario"Sin Saltar;
+                                    leer resultado_h;
+                                    Limpiar Pantalla;
+                                FinSi
+                            SiNo
+                                Escribir "clase llena";
+                                Esperar tecla;
+                            FinSi
+                            cont<-cont+1;
+                            opc<-opc-1;
+                            Limpiar Pantalla;
+                        FinMientras
+                        
+                        mientras opc==2 Hacer
+                            escribir "ingrese la identificacion, a consultar si ha presentado el curso :";
+                            Leer cons;
+                            si cons=id_a Entonces
+                                escribir "el alumno ",nom_a," Matriculado en el curso";
+                                Esperar Tecla;
+                                Limpiar Pantalla;
+                            FinSi
+                            si cons=id_b Entonces
+                                escribir "el alumno ",nom_b," matriculado en el curso";
+                                Esperar Tecla;
+                                Limpiar Pantalla;
+                            FinSi
+                            si cons=id_c Entonces
+                                escribir "el alumno ",nom_c," matriculado en el curso";
+                                Esperar Tecla;
+                                Limpiar Pantalla;
+                            FinSi
+                            si cons=id_d Entonces
+                                escribir "el alumno ",nom_d," matriculado en el curso";
+                                Esperar Tecla;
+                                Limpiar Pantalla;
+                            FinSi
+                            si cons=id_e Entonces
+                                escribir "el alumno ",nom_e," matriculado en el curso";
+                                Esperar Tecla;
+                                Limpiar Pantalla;
+                            FinSi
+                            si cons=id_f Entonces
+                                escribir "el alumno ",nom_f," matriculado en el curso";
+                                Esperar Tecla;
+                                Limpiar Pantalla;
+                            FinSi
+                            si cons=id_g Entonces
+                                escribir "el alumno ",nom_g," matriculado en el curso";
+                                Esperar Tecla;
+                                Limpiar Pantalla;
+                            FinSi
+                            si cons=id_h Entonces
+                                escribir "el alumno ",nom_h," matriculado en el curso";
+                                Esperar Tecla;
+                                Limpiar Pantalla;
+                            FinSi
+                            si cons<>id_a & cons<>id_b & cons<>id_c & cons<>id_d & cons<>id_e & cons<>id_f & cons<>id_g & cons<>id_h Entonces
+                                Escribir "Alumno no presento el curso";
+                                Esperar Tecla;
+                            FinSi
+                            opc<-opc-2;
+                            Limpiar Pantalla;
+                        FinMientras
+                        
+                        Mientras opc==3 Hacer
+                            Escribir "los Alumnos aprobados Fueron";
+                            si resultado_a="SI" | resultado_a="Si" | resultado_a="si" | resultado_a="sI" Entonces
+                                escribir "el alumno ",nom_a," ",resultado_a, " aprobo el curso";
+                            FinSi
+                            si resultado_b="SI" | resultado_b="Si" | resultado_b="si" | resultado_b="sI" Entonces
+                                escribir "el alumno ",nom_b," ",resultado_b, " aprobo el curso";
+                            FinSi
+                            si resultado_c="SI" | resultado_c="Si" | resultado_c="si" | resultado_c="sI" Entonces
+                                escribir "el alumno ",nom_c," ",resultado_c, " aprobo el curso";
+                            FinSi
+                            si resultado_d="SI" | resultado_d="Si" | resultado_d="si" | resultado_d="sI" Entonces
+                                escribir "el alumno ",nom_d," ",resultado_d, " aprobo el curso";
+                            FinSi
+                            si resultado_e="SI" | resultado_e="Si" | resultado_e="si" | resultado_e="sI" Entonces
+                                escribir "el alumno ",nom_e," ",resultado_e, " aprobo el curso";
+                            FinSi
+                            si resultado_f="SI" | resultado_f="Si" | resultado_f="si" | resultado_f="sI" Entonces
+                                escribir "el alumno ",nom_f," ",resultado_f, " aprobo el curso";
+                            FinSi
+                            si resultado_g="SI" | resultado_g="Si" | resultado_g="si" | resultado_g="sI" Entonces
+                                escribir "el alumno ",nom_g," ",resultado_g, " aprobo el curso";
+                            FinSi
+                            si resultado_h="SI" | resultado_h="Si" | resultado_h="si" | resultado_h="sI" Entonces
+                                escribir "el alumno ",nom_h," ",resultado_h, " aprobo el curso";
+                            FinSi
+                            Esperar Tecla;
+                            opc<-opc-3;
+                            Limpiar Pantalla;
+                        FinMientras
+                    FinPara
+                FinProceso
+                </pre>
+            </article>
+        </section>
+
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/D5TraPflRR0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </main>
+</body>
+</html>

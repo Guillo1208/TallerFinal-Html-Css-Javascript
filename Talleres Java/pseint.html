@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Pseint</title>
+</head>
+
+<body>
+    <header>
+        <H1>TALLERES CANTERA UNO - PSEINT</H1>
+    </header>
+    <nav>
+        <a id="navegacion" href="index.html">INICIO</a>
+        <a id="navegacion" href="pseincondiconales.html">TALLER CONDICIONALES</a>
+        <a id="navegacion" href="pseintciclos.html">TALLER CICLOS</a>
+        <a id="navegacion" href="pseintarreglo.html">TALLER AREGLOS</a>
+        <a id="navegacion" href="pseinfunciones.html">TALLER FUNCIONES</a>
+    </nav>
+    <main id="main-nuevo">
+        <section>
+            <article id="art-navega">
+                <P>1. Realizar un programa el cual solicite su nombre y apellidos.</P>
+            </article>
+            <pre>
+                Proceso Primerpunto
+	
+	                Definir nombre Como Caracter;
+	                Definir apellidos Como Caracter;
+	
+	                Escribir "¿Cual es tu nombre?";
+	                leer nombre;
+	
+	                Escribir "¿Cual es tu apellidos?";
+	                Leer apellidos;
+	
+	                Limpiar pantalla;
+	
+	                escribir "El Nombre completo es ", nombre ," ", apellidos;
+	
+                FinProceso
+            </pre>
+
+            <article id="art-navega">
+                <P>2. Realizar un programa el cual solicite su nombre, apellidos, edad y estatura.</P>
+            </article>
+            <pre>
+                Proceso Puntodos
+	                Definir nombre Como Caracter;
+	                Definir apellidos Como Caracter;
+	                Definir edad Como Entero;
+	                Definir estatura Como Real;
+		
+	                Escribir "¿Cual es tu nombre?";
+	                leer nombre;
+	
+	                Escribir "¿Cual es tu apellidos?";
+	                Leer apellidos;
+	
+	                Escribir "¿Cual es tu edad?";
+	                leer edad;
+	
+	                Escribir "¿cual es tu estatura en Mts?";
+	                leer estatura;
+	
+	                Limpiar pantalla;
+	
+	                escribir "Tu nombre completo es ", nombre ," ", apellidos;
+	                escribir "tienes ", edad, " años";
+	                escribir "Mides ", estatura ," Metros";
+	
+                FinProceso
+            </pre>
+            <article id="art-navega">
+                <P>3. Realizar un programa el cual solicite su nombre y apellidos, también debe capturar nombre y apellidos de su padre y madre. Al finalizar debe imprimir en pantalla el siguiente mensaje "Yo [Nombre Completo], soy hijo de [Nombre de la Madre] y [Nombre del Padre].</P>
+            </article>
+            <pre>
+            Proceso Puntotres
+                Definir nombremio Como Caracter;
+                Definir apellidosmio Como Caracter;
+                Definir nombremama Como Caracter;
+                Definir apellidosmama Como Caracter;
+                Definir nombrepapa Como Caracter;
+                Definir apellidospapa Como Caracter;
+                    
+                Escribir "¿Cual es tu nombre?";
+                leer nombremio;
+                Escribir "¿Cual es tu apellidos?";
+                Leer apellidosmio;
+                Escribir "¿Cual es el nombre de tu mama?";
+                leer nombremama;
+                Escribir "¿Cual es tu apellidos de tu mama ?";
+                Leer apellidosmama;
+                Escribir "¿Cual es el nombre de tu papa?";
+                leer nombrepapa;
+                Escribir "¿Cual es tu apellidos de tu papa ?";
+                Leer apellidospapa;
+                
+                Limpiar Pantalla;
+                
+                escribir "Yo, soy ", nombremio, " ", apellidosmio, " Soy hijo de ", nombremama, " ", apellidosmama, " y ", nombrepapa, " ", apellidospapa;
+                
+            FinProceso
+            </pre>
+
+            <article id="art-navega">
+                <P>4. Realizar un programa el cual solicite el nombre de una ciudad capital y el país. Al finalizar debe imprimir en pantalla el siguiente mensaje "La ciudad [Nombre de la Ciudad], es la capital del país [Nombre del País]</P>
+            </article>
+            <pre>
+            Proceso Puntocuatro
+                Definir Ciudad Como Caracter;
+                Definir Pais Como Caracter;
+                
+                Escribir "ingresa el nombre de una ciudada capital ";
+                leer Ciudad;
+                Escribir "Ingresa el pais ";
+                leer Pais;
+                
+                Limpiar Pantalla;
+                
+                Escribir "La ciudad ", Ciudad, " Es la capital de ", pais; 
+                
+            FinProceso
+            </pre>
+
+            <article id="art-navega">
+                <P>5. Realizar un programa el cual solicite el nombre de su mascota, edad de la mascota, el tipo de mascota y su nombre completo. Al finalizar el sistema debe e imprimir en pantalla el siguiente mensaje: [Nombre de Mascota] es un(a) [Tipo de Mascota], el cual, tiene [Edad de la Mascota] años de edad y [Nombre Completo] es actualmente su dueño(a).</P>
+            </article>
+            <pre>
+            Proceso Puntocinco
+                Definir nombre Como Caracter;
+                Definir edad Como Entero;;
+                Definir tipo Como Caracter;
+                Definir nombrecompleto Como Caracter;
+                    
+                Escribir "¿Cual es el nombre de la mascota?";
+                leer nombre;
+                Escribir "¿Cual es la edad de la mascota?";
+                Leer edad;
+                Escribir "¿Cual es el tipo de la mascota?";
+                leer tipo;
+                Escribir "¿Cual es tu nombre completo?";
+                Leer nombrecompleto;
+                    
+                Limpiar Pantalla;
+                
+                escribir nombre, " es uno(a) ", tipo, " el cual, tiene ", edad, " años de edad y ", nombrecompleto, " es actalmente su dueño(a) ";
+                
+            FinProceso
+            </pre>
+        </section>
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SSeZtW-7H9g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body{
+    background-color: rgb(200, 146, 250);
+}
+
+header{
+    background-color: rgb(227, 247, 140);
+    border-radius: 15px;
+    border: 2px solid chocolate;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(42, 161, 5);
+    text-align: center; 
+}
+
+#a-nave{
+    background-color: rgb(140, 184, 136);
+    width: 300px;
+    border-radius: 15px;
+    border: 2px solid chocolate;
+    cursor: pointer;
+    text-align: center;
+    margin: 10px auto;
+}
+
+a{
+    text-decoration: none;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+    font-size: 60px;
+    color: rgb(5, 141, 50);
+}
+
+#m-nave{
+    margin: 0px auto;
+    margin-top: 10px;
+    background-color: rgb(214, 248, 248);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+    border: 2px solid chocolate;
+    width: 700px;
+}
+
+nav{
+background-color: rgb(204, 245, 245);
+margin: 10px auto;
+padding-top: 10px;
+padding-bottom: 10px;
+border-radius: 15px;
+border:2px solid chocolate;
+text-align: center;
+}
+
+#navegacion{
+    border-radius: 15px;
+    border:1px solid chocolate;
+    font-size: 15px;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    background-color: rgb(253, 253, 212);
+}
+#main-nuevo{
+    margin: 20px auto;
+    background-color: rgb(171, 172, 172);
+    border-radius: 15px;
+    border:1px solid rgb(10, 10, 10);
+}
+p{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#art-navega{
+    margin: 10px 10px;
+}
+pre{
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgb(247, 248, 248);
+    border-radius: 15px;
+    border:1px solid rgb(10, 10, 10);
+}
+div{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#nuevo-java{
+    background-color: rgb(247, 248, 248);
+    width: 800px;
+    margin: 20px auto;
+    border-radius: 15px;
+    border:1px solid rgb(10, 10, 10);
+    padding: 15px 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(56, 59, 3);
+    font-size: 25px;
+    text-align: center;
+}
+.link{
+    font-style: oblique;
+    font-size: 20px;
+    color: blue;
+    text-decoration:underline;
+    text-align: left;
+    display: block;
+}

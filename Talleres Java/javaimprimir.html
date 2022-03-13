@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Pseint</title>
+</head>
+
+<body>
+    <header>
+        <H1>TALLERES CANTERA UNO - PSEINT</H1>
+    </header>
+    <nav>
+        <a id="navegacion" href="index.html">INICIO</a>
+        <a id="navegacion" href="condiconaljava.html">CONDICIONALES-JAVA</a>
+        <a id="navegacion" href="ciclojava.html">CICLOS JAVA</a>
+        <a id="navegacion" href="arreglojava.html">AREGLOS JAVA</a>
+    </nav>
+    <main id="main-nuevo">
+        <section>
+            <article id="art-navega">
+                <P>TAllER LEER E IMPRIMIR JAVA</P>
+                <pre>
+                    package com.canterauno;
+
+                    import java.util.Scanner;
+                    
+                    import Punto_Cinco.PuntoCinco;
+                    import Punto_Cuatro.PuntoCuatro;
+                    import Punto_Dos.PuntoDos;
+                    import Punto_Tres.PuntoTres;
+                    import Punto_Uno.PuntoUno;
+                    
+                    public class Main {
+                    
+                        public static void main(String[] args) {
+                            
+                            
+                            Scanner sn6 = new Scanner(System.in);
+                            boolean salir6=false;
+                            int opc6;
+                            
+                            do {
+                                System.out.println("===========================================");
+                                System.out.println("BIENVENIDO AL TALLER DE CAPTURAR E IMPRIMIR");
+                                System.out.println("===========================================");
+                                System.out.println("1. CAPTURA NOMBRE-APELLIDO");
+                                System.out.println("2. CAPTURARA NOMBRE-APELLIDO-EDAD-ESTATURA");
+                                System.out.println("3. CAPTURAR Y MOSTRAR DATOS");
+                                System.out.println("4. CAPTURAR CAPITAL-PAIS");
+                                System.out.println("5. INFORMACION MASCOTA");
+                                System.out.println("6. SALIR");
+                                opc6=sn6.nextInt();
+                                
+                                switch (opc6) {
+                                case 1:
+                                    PuntoUno uno =new PuntoUno();
+                                    uno.captura();
+                                    break;
+                                    
+                                case 2:
+                                    PuntoDos dos = new PuntoDos();
+                                    dos.capturar();
+                                    break;
+                                    
+                                case 3:
+                                    PuntoTres tres = new PuntoTres();
+                                    tres.capturar();
+                                    break;
+                                    
+                                case 4:
+                                    PuntoCuatro cuatro = new PuntoCuatro();
+                                    cuatro.capturar();
+                                    break;
+                                    
+                                case 5:
+                                    PuntoCinco cinco = new PuntoCinco();
+                                    cinco.capturar();
+                                    break;
+                                    
+                                case 6:
+                                    System.out.println("SALIDA EXITOSA");
+                                    salir6=true;
+                                    break;
+                                    
+                                default:
+                                    System.out.println("SOLO SE PERMITEN NUMEROS ENTRE 1 - 6");
+                                }
+                                
+                            } while (!salir6);  
+                        }
+                    }
+                </pre>
+            </article>
+
+            <article id="nuevo-java">
+                <span>ACONTINUACION ENCONTRAS LOS ENLACES QUE TE LLEVARN A CADA UNO DE LOS REPOSITORIOS DEL PUNTO CORRESPONDIENTE.</span><br>
+                <a class="link"href="https://github.com/Guillo1208/Leer-e-imprimir-JAVA/blob/main/src/Punto_Uno/PuntoUno.java"><b>Punto uno :</b> Leer nombre y apellido</a>
+                <a class="link"href="https://github.com/Guillo1208/Leer-e-imprimir-JAVA/blob/main/src/Punto_Dos/PuntoDos.java"><b>Punto dos :</b> Leer, capturar y mostrara datos</a>
+                <a class="link"href="https://github.com/Guillo1208/Leer-e-imprimir-JAVA/blob/main/src/Punto_Tres/PuntoTres.java"><b>Punto tres :</b> mostrar mensaje con satos capturados</a>
+                <a class="link"href="https://github.com/Guillo1208/Leer-e-imprimir-JAVA/blob/main/src/Punto_Cuatro/PuntoCuatro.java"><b>Punto Cuatro :</b> Leer y mostrar ciudad capital</a>
+                <a class="link"href="https://github.com/Guillo1208/Leer-e-imprimir-JAVA/blob/main/src/Punto_Cinco/PuntoCinco.java"><b>Punto cinco :</b> Leer y mostrar datos de la mascota</a>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

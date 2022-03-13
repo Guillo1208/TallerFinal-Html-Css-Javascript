@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(211, 212, 211);
+}
+
+form{
+    margin: 10px auto;
+    margin-top: 100px;
+    text-align: center;
+    background-color: rgb(221, 250, 240);
+    border-radius: 15px;
+    width:650px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+label{
+    font-family:cursive;
+    color: blue;
+}
+a{
+color:rgb(172, 5, 5);
+font-size: 12px;
+font-family: Verdana, sans-serif;
+border:2px outset rgb(243, 168, 6);
+border-radius: 10px 10px 10px 10px;
+background-color: rgb(250, 226, 210);
+transition: background-color .5s;
+text-decoration: none;
+margin:5px;
+padding: 10px;
+cursor: pointer
+}
+div{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}

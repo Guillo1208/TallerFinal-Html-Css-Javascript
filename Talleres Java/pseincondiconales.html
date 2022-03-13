@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Pseint-condicionales</title>
+</head>
+
+<body>
+    <header>
+        <H1>TALLERES CANTERA UNO - PSEINT</H1>
+    </header>
+    <nav>
+        <a id="navegacion" href="index.html">INICIO</a>
+        <a id="navegacion" href="pseint.html">TALLER VARIABLE E IMPRESION</a>
+        <a id="navegacion" href="pseintciclos.html">TALLER CICLOS</a>
+        <a id="navegacion" href="pseintarreglo.html">TALLER AREGLOS</a>
+        <a id="navegacion" href="pseinfunciones.html">TALLER FUNCIONES</a>
+    </nav>
+
+    <main id="main-nuevo">
+        <section>
+            <article id="art-navega">
+                <P>1. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es mayor o igual a 18 años, deberá mostrar en pantalla: Usted es mayor de edad.</P>
+                <pre>
+                    Algoritmo Primer_Punto
+	                Definir Edad Como Entero;
+	
+	                Escribir "Bienenido, ingresa tu edad actual";
+	                Leer Edad;
+	
+	                Si Edad >=18 Entonces
+		                Escribir "Usted es Mayor de edad";
+	                FinSi
+	
+                FinAlgoritmo
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>2. Realizar un programa en el cual se solicite la edad de una persona. Si la persona es menor a 18 años, deberá mostrar en pantalla: Usted aún es un niño(a).</P>
+                <pre>
+                    Algoritmo Segundo_Punto
+                    Definir Edad Como Entero;
+                    
+                    Escribir "Bienenido, ingresa tu edad actual";
+                    Leer Edad;
+                    
+                    Si Edad < 18 Entonces
+                        Escribir "Usted aun es un niño(a)";
+                    FinSi
+                    
+                FinAlgoritmo
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>3. Realizar un programa en el cual se solicite el nombre, apellidos y edad de la persona. Si la persona es mayor o igual a 18 años, entonce se deberá imprimir en pantalla [Nombre completo] usted es mayor de edad, por lo tanto puede entrar a la fiesta. Si la edad de la persona es menor que 18 años, entonces, deberá imprimirse el siguiente mensaje: [Nombre completo] usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa.</P>
+                <pre>
+                    Algoritmo Tercer_Punto
+                    Definir nombre Como Caracter;
+                    Definir apellido Como Caracter;
+                    Definir edad Como Entero;
+                    
+                    Escribir "Ingresa tu nombre ";
+                    leer nombre;
+                    
+                    Escribir "Ingresa tu apellido";
+                    leer apellido;
+                    
+                    Escribir  "ingresa tu edad";
+                    leer edad;
+                    
+                    Si edad >= 18 Entonces
+                        escribir nombre, " ", apellido, " usted es mayor de edad, por lo tanto puede entrar a la fiesta " ;
+                    SiNo
+                        escribir nombre," ", apellido, " usted es menor de edad, por lo tanto, no puede entrar a la fiesta, por favor devuélvase a su casa " ;
+                    FinSi
+                        
+                FinAlgoritmo
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>4. La video tienda que presta sus servicios de alquiler de películas a los usuarios del barrio el Porvenir, requiere de una aplicación que permita registrar el alquiler de las películas que adquieren sus usuarios. Para cada usuario se debe permitir la opción de alquilar película, consultar películas disponibles y recibir película en la video tienda con la opción de realizar anotaciones sobre estas si se llegan a presentar daños u otra novedad sobre la película.</P>
+                <pre>
+                    Algoritmo Cuarto_Punto
+                    Definir opcion Como Entero;
+                    Definir nombre_pelicula Como Caracter;
+                    Definir busqueda Como Caracter;
+                    Definir anotacion Como Caracter;
+                    
+                    Escribir "Escoja la opcion de su preferencia";
+                    Escribir "1 -- Alquilar pelicula";
+                    Escribir "2 -- Consultar peliculas disponibles";
+                    Escribir "3 -- Recibir pelicula";
+                    Leer opcion;
+                    
+                    Segun opcion Hacer
+                        1:
+                            Escribir "Ingresa el nombre de la pelicula a alquilar : ";
+                            Leer nombre_pelicula;
+                        2:
+                            Escribir "Ingresa el nombre de la pelicula a buscar : ";
+                            Leer busqueda;
+                        3:
+                            Escribir "Gracias por hacer uso de nuestro servicio";
+                            Escribir "a continuacion redacatar el estadodel producto";
+                            Leer estado;
+                            
+                        De Otro Modo:
+                            Escribir "Error OPCION no permitida";
+                    FinSegun
+                    
+                FinAlgoritmo
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>5. La Droguería Mi Salud presta sus servicios en la localidad de Suba y requiere una aplicación para poder facturar los productos que vende a sus clientes y para ello, los productos tienen unas características que deben indicársele al cliente para que pueda escoger el producto a comprar. Para cada cliente, se tienen las opciones de compra de producto, consulta de precios por producto y devoluciones en caso de que se presenten.</P>
+                <pre>
+                    Proceso Quinto_Punto
+                    Definir opcion Como Entero;
+                    Definir nombre_producto Como Caracter;
+                    Definir precio Como Real;
+                    Definir cantidad Como Entero;
+                    Definir busqueda Como Caracter;
+                    Definir devolucion Como Caracter;
+                    
+                    Escribir "Escoja la opcion de su preferencia";
+                    Escribir "1 -- Comprar producto";
+                    Escribir "2 -- Consultar precio";
+                    Escribir "3 -- Devolver producto";
+                    Leer opcion;
+                    
+                    Segun opcion Hacer
+                        1:
+                            Escribir "Prodcuto a comprar : ";
+                            Leer nombre_producto;
+                            Escribir "El precio de prodcto es : ";
+                            Leer precio;
+                            Escribir "Cantidad de producto a comprar : ";
+                            Leer cantidad;
+                            Escribir "por el prodcuto : ",nombre_producto, "debes cancelar $", precio*cantidad ;
+                            
+                        2:
+                            Escribir "Ingresa el nombre del producto a conusltar su precio : ";
+                            Leer busqueda;
+                        3:
+                            Escribir "Ingrese la referencia del producto a devolver";
+                            leer devolucion;
+                            
+                        De Otro Modo:
+                            Escribir "Error OPCION no permitida";
+                    FinSegun
+                FinProceso
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>6. El taller de motos "El Maquinista" recibe motocicletas de alto cilindraje para realizar las respectivas revisiones y requiere una aplicación que le permita registrar los servicios generados a sus clientes. Para cada motocicleta se debe tener registro del ingreso al taller y las observaciones por parte del cliente. También debe existir registro de salida del taller con las novedades y otra de arreglos hechos por el mecánico en caso de que se requiera inventariar cambios repuestos en la motocicleta al entregarla.</P>
+                <pre>
+                    Proceso Sexto_Punto
+                    Definir opcion Como Entero;
+                    Definir fecha_ingreso Como Caracter;
+                    Definir observaciones Como Caracter;
+                    Definir fecha_salida Como Caracter;
+                    Definir novedades Como Caracter;
+                    Definir cantidad Como Entero;
+                    Definir repuesto Como Caracter;
+                    
+                    Escribir "Escoja la opcion de su preferencia";
+                    Escribir "1 -- Ingreso de Moto";
+                    Escribir "2 -- Salida de Moto";
+                    Escribir "3 -- Arreglos realizados";
+                    Leer opcion;
+                    
+                    Segun opcion Hacer
+                        1:
+                            Escribir "registra la fecha de ingreso del vehiculo : ";
+                            Leer fecha_ingreso;
+                            Escribir "Redacta las observaciones que tiene el cliente del vehiculo";
+                            Leer observaciones;
+                        2:
+                            Escribir "registra la fecha de salida del vehiculo : ";
+                            Leer fecha_salida;
+                            Escribir "Redacta las novedades presentadas por el vehiculo";
+                            Leer novedades;
+                        3:
+                            Escribir "Ingrese el producto vendido";
+                            leer repuesto;
+                            Escribir "Ingrese la cantidad de repuestos vendidos";
+                            leer cantidad;
+                            Escribir "para este registro se vendieron", cantidad, " unidades del repuesto ", repuesto;
+                            
+                            
+                        De Otro Modo:
+                            Escribir "Error OPCION no permitida";
+                    FinSegun
+                FinProceso
+                
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>7. La Secretaría de Salud Municipal requiere de una aplicación que le permita calcular el IMC (Índice de masa corporal) y requiere los datos peso en kilogramos y estatura en metros Para cada persona encuestada adicional a los datos suministrados, debe mostrar el resultado para cada uno y establecer en qué rango se encuentra (bajo peso, normal, sobrepeso y obeso).</P>
+                <pre>
+                    Proceso Septimo_Punto
+                    Definir Peso Como Real;
+                    Definir Altura Como Real;
+                    definir IMC Como Real;
+                    
+                    Escribir "Vamos a calcular el Indice de Masa Corporal";
+                    Escribir "Para ello necesitaremos los siguientes datos";
+                    Escribir "Cual es tu peso en KILOGRAMOS";
+                    leer Peso;
+                    Escribir "Cual es tu altura en METROS";
+                    Leer Altura;
+                    
+                    IMC <- Peso / (Altura*Altura);
+                    Escribir "tu IMC es de = ", IMC;
+                    
+                    Si IMC < 18.5 Entonces
+                        Escribir "TU PESO ES BAJO";
+                    FinSi
+                    Si IMC >= 18.5 Y IMC <= 24.9 Entonces
+                        Escribir "TU PESO NORMAL";
+                    FinSi
+                    Si IMC >= 25.0 Y IMC <= 29.9 Entonces
+                        Escribir "TU PESO ESTA EN SOBRE PESO";
+                    FinSi
+                    Si IMC >= 30.0 Entonces
+                        Escribir "ERES OBESO";
+                    FinSi
+                FinProceso
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>8. El pastelero Don Carlos es el mejor pastelero de la ciudad y requiere una aplicación que le permita registrar los pedidos de los clientes en cuanto a las tortas que realiza. Cada torta tiene unas características propias como sabor, cantidad (porciones) y decoraciones). Se requiere que la aplicación permita registrar los pedidos, las tortas disponibles y las ventas que se registren diariamente.</P>
+                <pre>
+                    Proceso Octovo_punto
+                    Definir opcion Como Entero;
+                    Definir sabor Como Caracter;
+                    Definir cantidad Como Entero;
+                    Definir precio Como Real;
+                    Definir decoracion Como Caracter;
+                    
+                    Escribir "Escoja la opcion de su preferencia";
+                    Escribir "1 -- Compra";
+                    Escribir "2 -- Inventario";
+                    Escribir "3 -- Ventas diarias";
+                    Leer opcion;
+                    
+                    Segun opcion Hacer
+                        1:
+                            Escribir "Igresa el pedido : ";
+                            Escribir "Sabor de la torta";
+                            Leer sabor;
+                            Escribir "Decoracion de la torta";
+                            Leer decoracion;
+                            Escribir "Porciones de la torta";
+                            Leer cantidad;
+                            Escribir "Precio :";
+                            Leer precio;
+                            
+                        2:
+                            Escribir "Actualemnte en el inventario se tiene : ";
+                            Escribir "40 porciones de torta de arequipe con crema ";
+                            Escribir "60 porciones de chocolate con fresa ";
+                            Escribir "30 porciones de yogour y pasas ";
+                            
+                        3:
+                            Escribir "Registra el producto vendido";
+                            Escribir "cantidad del producto";
+                            leer cantidad;
+                            Escribir "precio del producto";
+                            Leer precio;
+                            Escribir "Se guaradara la venta por valor de $ ", cantidad*precio;
+                            
+                            
+                        De Otro Modo:
+                            Escribir "Error OPCION no permitida";
+                    FinSegun
+                FinProceso
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>9.El profesor de geometría está explicando a sus estudiantes las fórmulas para calcular el área de diferentes figuras geométricas, para ello requiere una aplicación que le facilite el ejercicio solicitándole los valores al estudiante. La aplicación debe permitir que el estudiante seleccione si desea calcular el área de un rectángulo, triángulo o trapecio. No olvide solicitar los datos necesarios para realizar cada cálculo y mostrar su respectivo resultado.</P>
+                <pre>
+                    Proceso Noveno_punto
+                    Definir opcion Como Entero;
+                    Escribir "Selecciona en la opcion la figura a calcular el area : ";
+                    Escribir "1 -- Rectangulo";
+                    Escribir "2 -- Triangulo";
+                    Escribir "3 -- Trapecio";
+                    Leer opcion;
+                    
+                    Segun opcion Hacer
+                        1:
+                            Definir base Como Real;
+                            Definir altura Como Real;
+                            Escribir "ingresa la BASE (cm) del rectangulo a calcular : ";
+                            Leer base;
+                            Escribir "ingresa la ALTURA (cm) del rectangulo a calcular : ";
+                            Leer altura;
+                            Escribir "El area del ractangulo es :", base*altura;
+                            
+                        2:
+                            Definir base Como Real;
+                            Definir altura Como Real;
+                            Escribir "ingresa la BASE (cm) del triangulo a calcular : ";
+                            Leer base;
+                            Escribir "ingresa la ALTURA (cm) del triangulo a calcular : ";
+                            Leer altura;
+                            Escribir "El area del triangulo es :", (base*altura)/2;
+                            
+                        3:
+                            Definir base_a Como Real;
+                            Definir base_b Como Real;
+                            Definir altura Como Real;
+                            Escribir "ingresa la BASE_A (cm) del triangulo a calcular : ";
+                            Leer base_a;
+                            Escribir "ingresa la BASE_B (cm) del triangulo a calcular : ";
+                            Leer base_b;
+                            Escribir "ingresa la ALTURA (cm) del triangulo a calcular : ";
+                            Leer altura;
+                            Escribir "El area del triangulo es :", ((base_a+base_b)*altura)/2, " centimetros cuadrados ";  
+                        De Otro Modo:
+                            Escribir "Error OPCION no permitida";
+                    FinSegun
+                FinProceso
+                </pre>
+            </article>
+
+            <article id="art-navega">
+                <P>10. El banco "Su banco fiel" es un banco que inicia sus actividades financieras y necesita una aplicación para llevar las cuentas de sus usuarios; por lo tanto, se sugiere que la cuenta tenga los atributos titular y cantidad. Para cada cliente las cuentas permitirán realizar ingresos, retiros o consultas de valor. En los ingresos no se pueden insertar valores negativos y para los retiros el valor no puede ser mayor al valor que tiene en la cuenta.</P>
+                <pre>
+                Proceso Decimo_punto
+                    Definir opcion Como Entero;
+                    definir titular Como Caracter;
+                    definir cantidad Como real;
+                    definir ingreso Como Real;
+                    definir retiro Como Real;
+                    definir nuevo_saldo Como Real;
+                    
+                    titular<-"Juan Perez";
+                    cantidad<- 1000;
+                    
+                    escribir "===========================================";
+                    Escribir "Sr ", titular, " bienvenido a SU BANCO FIEL";
+                    Escribir "Selecciona la operacion a realizar : ";
+                    Escribir "1 -- Ingreso";
+                    Escribir "2 -- Retiro";
+                    Escribir "3 -- Consulta";
+                    Leer opcion;
+                    escribir "===========================================";
+                    
+                    Segun opcion Hacer
+                        1:
+                            escribir "Hola Sr ", titular , " acontinuacion ingresa el valor a consignar en la cuenta";
+                            leer ingreso;
+                            si ingreso > 0 Entonces
+                                nuevo_saldo<-ingreso+cantidad;
+                                Escribir "el ingreso es EXITOSO, tu cuenta tiene una saldo de $",nuevo_saldo;
+                            SiNo
+                                Escribir "error ingreso no exitoso, debe ser mayor a cero el ingreso";	
+                            FinSi
+                            
+                        2:
+                            escribir "Hola Sr ", titular ," acontinuacion ingresa el valor a retirar de la cuenta Recuerda que tienes disponible $",cantidad;
+                            leer retiro;
+                            si retiro > cantidad Entonces
+                                Escribir "El retiro no puede ser mayor a los disponible en la cuenta, recuerda que el disponible es $", cantidad;
+                            SiNo
+                                Escribir "Retiro exitoso, ahora tienes disponible ne tu cuenta $", cantidad-retiro;
+                            FinSi
+                            
+                        3:
+                            Escribir "El saldo disponible en tu cuenta es $",cantidad;
+                            
+                            
+                        De Otro Modo:
+                            Escribir "Error OPCION no permitida";
+                    FinSegun
+                FinProceso
+                </pre>
+            </article>
+        </section>
+        
+        <div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/suRG-mY5hvA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </main>
+</body>
+</html>
